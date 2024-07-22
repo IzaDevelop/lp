@@ -1,0 +1,103 @@
+@import "../../styles/color-variables.scss";
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.main-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+
+  span {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $secondary-text;
+  }
+
+  h1 {
+    font-size: 72px;
+    font-weight: 900;
+    color: $primary-text;
+  }
+}
+
+.benefit-section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 70px;
+
+  .benefit-data {
+    border-bottom: 10px solid $secondary-color;
+    padding-bottom: 40px;
+
+    h2 {
+      font-size: 60px;
+      font-weight: 600;
+      color: $primary-text;
+    }
+  }
+
+  p {
+    font-size: 40px;
+    font-weight: 300;
+    font-style: italic;
+
+    b {
+      background: -webkit-linear-gradient(180deg, $light-primary-color, $secondary-color);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-style: normal;
+    }
+  }
+}
+
+.cta-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  h2 {
+      font-family: "Roboto", sans-serif;
+      font-weight: 700;
+      font-size: 36px;
+      color: $primary-text;
+      margin: 0;
+      text-align: center;
+      margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-section {
+      flex-direction: row;
+      span {
+          font-size: 20px;
+      }
+      h1 {
+          font-size: 72px;
+      }
+  }
+
+  .benefit-section {
+      flex-direction: row;
+      .benefit-data h2 {
+          font-size: 60px;
+      }
+      p {
+          font-size: 40px;
+      }
+  }
+
+  .cta-section h2 {
+      font-size: 60px;
+  }
+}

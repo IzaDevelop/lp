@@ -1,0 +1,27 @@
+@import "../../styles/color-variables.scss";
+
+.btn {
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  padding: 20px 40px;
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: default;
+  }
+
+  &.primary {
+    font-size: 25px;
+    font-weight: 900;
+    color: white;
+    background: $secondary-color;
+    font-style: normal;
+  }
+
+  &.secondary {
+    font-size: 15px;
+    color: $primary-text;
+    background: white;
+  }
+}
